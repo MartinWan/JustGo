@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 JustGo
+  p.lead Just the ancient board game.
+  hr
+  div(id='view')
+
+block controller
+  script(src='/js/service/server.js')
+  script(src='/js/views/helpers/buttonFactory.js')
+  script(src='/js/views/helpers/gameContainerViewFactory.js')
+  script(src='/js/views/modeSelectionView.js')
+  script(src='/js/views/sizeSelectionView.js')
+  script(src='/js/views/gameContainerView.js')
+  script(src='/js/views/boardView.js')
+  script(src='/js/views/matchmakingView.js')
+  script(src='/js/views/spinner.js')
+  script(src='/js/views/availableMatchesView.js')
+  script(src='/js/views/scoreView.js')
+  script(src='/js/views/passButtonView.js')
+  script(src='/js/controllers/homeController.js')
+  script(src='/js/controllers/gameController.js')
