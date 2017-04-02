@@ -29,6 +29,6 @@ hinder our learning of design patterns.
     
     SESSION_SECRET=Value
     
-3. Type npm start
+3. Type npm run dev
 
 4. Enjoy...?

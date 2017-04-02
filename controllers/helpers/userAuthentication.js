@@ -4,7 +4,7 @@
  */
 exports.requireAuthentication = (req, res, next) => {
   if (!req.user) {
-    res.redirect('/login')
+    res.redirect('/user/login')
   } else {
     req.user.populate('game', next)
   }

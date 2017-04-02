@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A simple node web application for SENG299-Software Architecture",
   "scripts": {
-    "start": "node -r dotenv/config ./bin/www",
+    "start": "node ./bin/www",
+    "dev": "node -r dotenv/config ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
