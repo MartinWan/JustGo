@@ -33,13 +33,15 @@ function createController() {
     server,
     availableMatchesViewFactory
   )
+  const loggedIn = document.getElementById('login-status')
 
   new HomeController(
     server,
     modeSelectionView,
     sizeSelectionView,
     gameControllerFactory,
-    matchmakingView
+    matchmakingView,
+    loggedIn
   )
 }
 
@@ -52,13 +54,15 @@ class HomeController {
               modeSelectionView,
               sizeSelectionView,
               gameControllerFactory,
-              matchmakingView
+              matchmakingView,
+              loggedIn
   ) {
     this._server = server
     this._modeSelectionView = modeSelectionView
     this._sizeSelectionView = sizeSelectionView
     this._gameContainerViewFactory = gameControllerFactory
     this._matchmakingView = matchmakingView
+    this._loggedIn = loggedIn
 
     this._modeSelected = this._modeSelected.bind(this)
     this._sizeSelected = this._sizeSelected.bind(this)
@@ -72,9 +76,13 @@ class HomeController {
   }
 
   _modeSelected(selectedMode) {
-    this._modeSelectionView.destroy()
-    this._selectedMode = selectedMode
-    this._sizeSelectionView.render()
+    if (this._loggedIn) {
+      this._modeSelectionView.destroy()
+      this._selectedMode = selectedMode
+      this._sizeSelectionView.render()
+    } else {
+      window.location = '/user/login'
+    }
   }
 
   _sizeSelected(size) {
