@@ -5,11 +5,20 @@ with friends through networked-play or in hotseat mode
 (... or with an AI if the user has no friends.)
 Implemented using NodeJS, ExpressJS, and MongoDB.
 
-This project was for SENG 299 Software Architecture course.
-We were restricted from using front-end frameworks since their opinions
-hinder our learning of design patterns.
+This project was for UVic's SENG 299 Software Architecture course.
+Use of front-end frameworks were restricted in order to understand the motivations 
+behind frameworks like AngularJS and ReactJS.
+
+## Screenshots
+
+![Screenshot](/doc/screenshot.png) 
+
 
 ### Use
+
+You can access the application here: https://justgoproject.herokuapp.com/
+
+### Installation
 
 1. Install dependencies
 
@@ -30,5 +39,3 @@ hinder our learning of design patterns.
     SESSION_SECRET=Value
     
 3. Type npm run dev
-
-4. Enjoy...?
