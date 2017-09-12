@@ -14,9 +14,6 @@ behind frameworks like AngularJS and ReactJS.
 ![Screenshot](/doc/screenshot.png) 
 
 
-### Use
-
-You can access the application here: https://justgoproject.herokuapp.com/
 
 ### Installation
 
