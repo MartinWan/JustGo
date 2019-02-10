@@ -9,8 +9,6 @@ This project was for UVic's SENG 299 Software Architecture course.
 Use of front-end frameworks were restricted in order to understand the motivations 
 behind frameworks like AngularJS and ReactJS.
 
-App can be accessed here: http://justgoproject.herokuapp.com/
-
 ## Screenshots
 
 ![Screenshot](/doc/screenshot.png) 
